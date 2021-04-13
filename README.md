@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README would normally document whatever steps are necessary to get the application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 3.0.0
 
-* System dependencies
+* Rails version: 6.1.3.1
 
-* Configuration
+Setup steps:
 
-* Database creation
+* bundle install
 
-* Database initialization
+* rails db:create db:migrate db:seed
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The api test with Postman (You can import this file to Postman and test): https://drive.google.com/file/d/1UY9QG_uC1mzJwepzLWytj-fCj35u0RO6/view?usp=sharing

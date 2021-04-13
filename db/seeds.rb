@@ -26,3 +26,36 @@ end
     end_time: DateTime.now.change({ hour: 5 + i }) + 1.day
   )
 end
+
+# Friend clock lists
+Clock.create(
+  user_id: 2,
+  start_time: DateTime.now.change({ hour: 22 }),
+  end_time: DateTime.now.change({ hour: 5 }) + 1.day
+)
+
+Clock.create(
+  user_id: 2,
+  start_time: DateTime.now.change({ hour: 22 }),
+  end_time: DateTime.now.change({ hour: 4 }) + 1.day
+)
+
+Clock.create(
+  user_id: 2,
+  start_time: DateTime.now.change({ hour: 22 }),
+  end_time: DateTime.now.change({ hour: 3 }) + 1.day
+)
+
+Clock.create(
+  user_id: 2,
+  start_time: DateTime.now.change({ hour: 22 }),
+  end_time: DateTime.now.change({ hour: 2 }) + 1.day
+)
+
+# Friend clocks not in past week
+Clock.create(
+  user_id: 2,
+  start_time: DateTime.now.change({ hour: 22 }),
+  end_time: DateTime.now.change({ hour: 1 }) + 1.day,
+  created_at: DateTime.now - 8.days
+)
